@@ -2,8 +2,11 @@ package com.github.offby1.spinnerspike;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.SpinnerAdapter;
 import android.widget.Toast;
 
 public class ActivityWithActionBar extends Activity {
@@ -46,4 +49,13 @@ public class ActivityWithActionBar extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.action_list,
+		          android.R.layout.simple_spinner_dropdown_item);
+
+	}
 }

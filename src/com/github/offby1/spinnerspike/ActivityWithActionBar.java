@@ -61,8 +61,20 @@ public class ActivityWithActionBar extends Activity implements ActionBar.OnNavig
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        ActionBar actionBar = getActionBar();
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+
         SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.action_list,
                                                                          android.R.layout.simple_spinner_dropdown_item);
+        actionBar.setListNavigationCallbacks(mSpinnerAdapter, this);
+    }
 
+    @Override
+    public boolean onNavigationItemSelected(int itemPosition, long itemId) {
+        // TODO Auto-generated method stub
+        Toast.makeText(ActivityWithActionBar.this,
+                       String.format ("itemPosition %d; itemId %d", itemPosition, itemId),
+                       Toast.LENGTH_SHORT).show();
+        return false;
     }
 }

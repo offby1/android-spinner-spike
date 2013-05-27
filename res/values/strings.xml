@@ -8,9 +8,14 @@
     <string name="second">Second</string>
 
   <string-array name="action_list">
-    <item>Mercury</item>
-    <item>Venus</item>
-    <item>Earth</item>
+    <item>First</item>
+    <item>Bean</item>
+    <item>Sprout</item>
+    <item>Carrot</item>
+    <item>Second</item>
+    <item>Pork</item>
+    <item>Beef</item>
+    <item>Turkey</item>
   </string-array>
 
 </resources>

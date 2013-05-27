@@ -1,6 +1,7 @@
 package com.github.offby1.spinnerspike;
 
 import android.app.Activity;
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
 
-public class ActivityWithActionBar extends Activity {
+public class ActivityWithActionBar extends Activity implements ActionBar.OnNavigationListener {
 
     ActivityWithActionBar mMainActivity;
 

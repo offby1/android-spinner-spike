@@ -5,7 +5,15 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/action_settings"/>
-    <item android:id="@+id/first" android:title="@string/first"></item>
-    <item android:id="@+id/second" android:title="@string/second"></item>
+
+    <item android:id="@+id/first"  android:title="@string/first" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/bean"   android:title="bean"          android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/sprout" android:title="sprout"        android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/carrot" android:title="carrot"        android:showAsAction="ifRoom"></item>
+
+    <item android:id="@+id/second" android:title="@string/second" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/pork"   android:title="pork"           android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/beef"   android:title="beef"           android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/turkey" android:title="turkey"         android:showAsAction="ifRoom"></item>
     
 </menu>

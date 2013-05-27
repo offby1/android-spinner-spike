@@ -32,9 +32,15 @@ public class ActivityWithActionBar extends Activity {
 
         switch (position) {
         case R.id.first:
+        case R.id.bean:
+        case R.id.sprout:
+        case R.id.carrot:
             intent = new Intent(mMainActivity, FirstActivity.class);
             break;
         case R.id.second:
+        case R.id.pork:
+        case R.id.beef:
+        case R.id.turkey:
             intent = new Intent(mMainActivity, SecondActivity.class);
             break;
         }
@@ -50,12 +56,12 @@ public class ActivityWithActionBar extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-		SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.action_list,
-		          android.R.layout.simple_spinner_dropdown_item);
+        SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.action_list,
+                                                                         android.R.layout.simple_spinner_dropdown_item);
 
-	}
+    }
 }
